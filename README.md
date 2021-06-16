@@ -1,2 +1,2 @@
 # javascript_project
- some project to demonstrate simple javascript
+we will make 20 projects in it
