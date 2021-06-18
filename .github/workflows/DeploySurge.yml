@@ -31,6 +31,10 @@ jobs:
           node-version: '14'
       # installing surge
       - name: Installing surge
-      - run : npm install --global surge
+        run : npm install --global surge
+        
+      # deploy apt to surge
+      - name : execute deployment with surge 
+        run : surge./home/mshussain/ auspicious-act.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
 
