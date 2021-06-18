@@ -35,6 +35,6 @@ jobs:
         
       # deploy apt to surge
       - name : execute deployment with surge 
-        run : surge./home/mshussain/ auspicious-act.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run : surge./ auspicious-act.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
 
