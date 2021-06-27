@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --success-color: limegreen;
+    --error-color: orangered;
+}
+
+
+
+
+
 *{
     box-sizing: border-box;
 }
@@ -49,8 +58,16 @@ form{
     border-color: #c5C6c7 ;
 }
 .form-control.success input{
-    border-color: limegreen;
+    border-color: var(--success-color);
 }
-.form-control. not success input{
-    border-color: orangered;
+.form-control.error input{
+    border-color: var(--error-color);
+
+}
+.form-control small{
+    color: ;var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
 }
